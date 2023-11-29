@@ -3,12 +3,42 @@
         {
             "name" : "BC Blockchain",
             "tags" : "Cryptocurrency, Tech, Shea Center",
-            "description" : "BC Blockchain is a student-run, educational and professional organization seeking to educate other students on blockchain technology. We incorporate hands-on learning with industry expert speaking engagements, educational workshops, and ongoing projects to market cryptocurrencies within the student body"
+            "description" : "BC Blockchain is a student-run, educational and professional organization seeking to educate other students on blockchain technology. We incorporate hands-on learning with industry expert speaking engagements, educational workshops, and ongoing projects to market cryptocurrencies within the student body."
         },
         {
             "name" : "Fulton Leadership Society",
             "tags" : "Finance, CSOM, Service",
             "description" : "The Fulton Leadership Society (FLS) in the Carroll School of Management aims to provide students with an opportunity to engage in formative experiences to develop their leadership potential, intellectual curiosity, and orientation to serve their community. FLS also adds value to the larger CSOM and Boston College communities through multiple outward facing initiatives."
+        },
+        {
+            "name" : "4Boston",
+            "tags" : "Service, Community",
+            "description" : "4Boston is BC's largest weekly service organization. Volunteers serve four hours each week of the academic year with community partners in the social service, healthcare, or education sectors and engage in one hour of group reflection centered on community, social justice, and spirituality."
+        },
+        {
+            "name" : "Best Buddies",
+            "tags" : "Community, Disability",
+            "description" : "Best Buddies of BC is part of an international organization that works to pair college students with employees that work on campus, or live around campus, with intellectual or developmental disabilities. Each college buddy is paired with a buddy to form a one-to-one friendship during their time as a student at BC."
+        },
+        {
+            "name" : "BC Army ROTC",
+            "tags" : "Military, Service, ROTC",
+            "description" : "Army ROTC focuses on developing leadership and management skills, with the goal of commissioning graduated college students as Second Lieutenants into the United States Army, Reserve, or National Guard. Students participate in ROTC part-time while attending college full-time. Most training and coursework takes place on the Boston College campus."
+        },
+        {
+            "name" : "Jenks Leadership Program",
+            "tags" : "Leadership, Service, MCAS",
+            "description" : "The Jenks Leadership Program (JLP) is the signature student leadership program of the Winston Center for Leadership and Ethics and the Boston College community. JLP, named for Weston “Sandy” Jenks ’47, identifies and prepares undergraduate men and women to take up leadership roles in the service of others and the common good."
+        },
+        {
+            "name" : "Boston College Computer Science Society",
+            "tags" : "Computer Science, Technology",
+            "description" : "The Boston College Computer Science Society aims to foster an inclusive tech community for students of all majors to develop their coding skills, encourage each other to make their ideas come to life, and help students navigate through their career journey."
+        },
+        {
+            "name" : "BC Dynamics",
+            "tags" : "Acapella, Singing",
+            "description" : "We are the Boston College Dynamics, a co-ed a cappella group from Chestnut Hill, Massachusetts. Founded in 1998, our group has developed into a premiere performing group on the Boston College campus. Our repertoire includes Top 40, R&B, and many other genres of popular music."
         }
     ]
 }
