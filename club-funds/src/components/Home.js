@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import css from "../styles/Home.module.css";
 
 export default function Home() {
@@ -18,7 +19,9 @@ export default function Home() {
           </form>
         </div>
         <div className={css.AddClubDiv}>
-            <button>Add a New Club</button>
+            <Link to="/addclub">
+              <button>Add a New Club</button>
+            </Link>
         </div>
       </div>
       <div className={css.Boxes}>

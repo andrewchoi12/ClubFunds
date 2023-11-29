@@ -3,7 +3,7 @@ import css from "../styles/AddClub.module.css";
 
 export default function AddClub() {
   return (
-    <main class="AddClub">
+    <main className="AddClub">
       <header>Add a New Club</header>
       <div class="Boxes">
         <div class="Box">
