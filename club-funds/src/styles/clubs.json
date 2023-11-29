@@ -1,0 +1,14 @@
+{
+    "clubs": [
+        {
+            "name" : "BC Blockchain",
+            "tags" : "Cryptocurrency, Tech, Shea Center",
+            "description" : "BC Blockchain is a student-run, educational and professional organization seeking to educate other students on blockchain technology. We incorporate hands-on learning with industry expert speaking engagements, educational workshops, and ongoing projects to market cryptocurrencies within the student body"
+        },
+        {
+            "name" : "Fulton Leadership Society",
+            "tags" : "Finance, CSOM, Service",
+            "description" : "The Fulton Leadership Society (FLS) in the Carroll School of Management aims to provide students with an opportunity to engage in formative experiences to develop their leadership potential, intellectual curiosity, and orientation to serve their community. FLS also adds value to the larger CSOM and Boston College communities through multiple outward facing initiatives."
+        }
+    ]
+}

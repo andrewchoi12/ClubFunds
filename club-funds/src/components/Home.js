@@ -1,8 +1,36 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import css from "../styles/Home.module.css";
+import clubsFile from "../styles/clubs.json";
 
 export default function Home() {
+  let clubs = clubsFile.clubs;
+  /*
+  let clubHTML = ``;
+  for (let i in clubs) {
+    clubHTML += `
+    <div className={css.Club}>
+          <h1>${clubs[i].name}</h1>
+          <a>Tags: ${clubs[i].tags}</a>
+          <h3>Who we are:</h3>
+          <p>
+            ${clubs[i].description}
+          </p>
+          <button>Connect</button>
+        </div>
+    `;
+  }
+  */
+  const Club = ({ name, tags, description }) => (
+    <div className={css.Club}>
+      <h1>{name}</h1>
+      <a>Tags: {tags}</a>
+      <h3>Who we are:</h3>
+      <p>{description}</p>
+      <button>Connect</button>
+    </div>
+  );
+
   return (
     <main className={css.Home}>
       <header>Website Name</header>
@@ -26,34 +54,16 @@ export default function Home() {
       </div>
       <div className={css.Boxes}>
         <h3>Featured Clubs</h3>
-        <div className={css.Club}>
-          <h1>BC Blockchain</h1>
-          <a>Tags: Cryptocurrency, Tech, Shea Center</a>
-          <h3>Who we are:</h3>
-          <p>
-            BC Blockchain is a student-run, educational and professional
-            organization seeking to educate other students on blockchain
-            technology. We incorporate hands-on learning with industry expert
-            speaking engagements, educational workshops, and ongoing projects to
-            market cryptocurrencies within the student body.
-          </p>
-          <button>Connect</button>
-        </div>
-        <div className={css.Club}>
-          <h1>Fulton Leadership Society</h1>
-          <a>Tags: Finance, CSOM, Service</a>
-          <h3>Who we are:</h3>
-          <p>
-            The Fulton Leadership Society (FLS) in the Carroll School of
-            Management aims to provide students with an opportunity to engage in
-            formative experiences to develop their leadership potential,
-            intellectual curiosity, and orientation to serve their community.
-            FLS also adds value to the larger CSOM and Boston College
-            communities through multiple outward facing initiatives.
-          </p>
-          <button>Connect</button>
-        </div>
+        {clubs.map((club, index) => (
+          <Club
+            key={index}
+            name={club.name}
+            tags={club.tags}
+            description={club.description}
+          />
+        ))}
       </div>
     </main>
-  );
+    );
+
 }
