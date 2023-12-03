@@ -4,7 +4,23 @@ import css from "../styles/Home.module.css";
 import clubsFile from "../styles/clubs.json";
 
 export default function Home() {
-  let clubs = clubsFile.clubs;
+  // let clubs = clubsFile.clubs;
+  const initialClubs = clubsFile.clubs;
+  const [clubs, setClubs] = useState(initialClubs);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = (event) => {
+    const term = event.target.value.toLowerCase();
+    setSearchTerm(term);
+
+    // Filter clubs based on the search term
+    const filteredClubs = initialClubs.filter((club) =>
+      club.name.toLowerCase().includes(term)
+    );
+
+    setClubs(filteredClubs);
+  };
+
   /*
   let clubHTML = ``;
   for (let i in clubs) {
@@ -37,12 +53,14 @@ export default function Home() {
       <div className={css.HeaderButtons}>
         <div className={css.SearchDiv}>
           <form>
-            <button>Search</button>
+            <button type="button">Search</button>
             <input
               type="search"
               id="query"
               name="q"
               placeholder="Find a club..."
+              value={searchTerm}
+              onChange={handleSearch}
             />
           </form>
         </div>
