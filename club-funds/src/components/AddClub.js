@@ -36,7 +36,7 @@ export default function AddClub() {
           <input type="text" id="tags" name="tags" placeholder="Enter Tags" />
         </div>
 
-        <button type="submit" class="SubmitButton">Submit</button>
+        <button type="submit" class={css.SubmitButton}>Submit</button>
       </div>
     </main>
   );
