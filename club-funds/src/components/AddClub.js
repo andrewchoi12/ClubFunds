@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import css from "../styles/AddClub.module.css";
+import { Link } from "react-router-dom";
 
 export default function AddClub() {
   return (
     <main className={css.AddClub}>
-      <header>Add a New Club</header>
+      <header>
+        <Link to="/" className={css.BackButton}>
+          Back
+        </Link>
+        Add a New Club
+      </header>
       <div class={css.Boxes}>
         <div class={css.Box}>
           <label className={css.label} htmlFor="clubName">
