@@ -3,11 +3,13 @@ import css from "../styles/AddClub.module.css";
 
 export default function AddClub() {
   return (
-    <main className="AddClub">
+    <main className={css.AddClub}>
       <header>Add a New Club</header>
-      <div class="Boxes">
-        <div class="Box">
-          <label for="clubName">Club Name:</label>
+      <div class={css.Boxes}>
+        <div class={css.Box}>
+          <label className={css.label} htmlFor="clubName">
+            Club Name:
+          </label>
           <input
             type="text"
             id="clubName"
@@ -16,8 +18,10 @@ export default function AddClub() {
           />
         </div>
 
-        <div class="Box">
-          <label for="clubDescription">Club Description:</label>
+        <div class={css.Box}>
+          <label className={css.label} htmlFor="clubDescription">
+            Club Description:
+          </label>
           <textarea
             id="clubDescription"
             name="clubDescription"
@@ -25,8 +29,10 @@ export default function AddClub() {
           ></textarea>
         </div>
 
-        <div class="Box">
-          <label for="tags">Tags:</label>
+        <div class={css.Box}>
+          <label className={css.label} htmlFor="tags">
+            Tags:
+          </label>
           <input type="text" id="tags" name="tags" placeholder="Enter Tags" />
         </div>
 
