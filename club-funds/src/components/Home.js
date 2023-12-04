@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
     <main className={css.Home}>
-      <header>Club Funds</header>
+      <header>Club Connect</header>
       <div className={css.HeaderButtons}>
         <div className={css.SearchDiv}>
           <form>
