@@ -42,6 +42,13 @@ export default function AddClub() {
           <input type="text" id="tags" name="tags" placeholder="Enter Tags" />
         </div>
 
+        <div class={css.Box}>
+          <label className={css.label} htmlFor="requests">
+            Funding Requests:
+          </label>
+          <input type="text" id="requests" name="requests" placeholder="Enter Requests" />
+        </div>
+
         <button type="submit" class={css.SubmitButton}>Submit</button>
       </div>
     </main>
