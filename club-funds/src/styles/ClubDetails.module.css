@@ -1,0 +1,56 @@
+.clubDetailContainer {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff; /* White background for the card */
+    width: 90%; /* Increase width */
+    max-width: 800px; /* Increase maximum width */
+    margin: 20px auto; /* Adjust vertical margin, center card horizontally */
+    padding: 30px; /* Increase padding for more space */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the card */
+    border-radius: 10px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures no content spills out */
+}
+
+.clubName {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.clubDescription {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.requestsContainer {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    gap: 20px; /* Increase spacing between cards */
+}
+
+.requestCard {
+    background-color: #f7f7f7; /* Light grey background for cards */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px; /* Increase padding for each card */
+    flex: 0 0 auto; /* Prevents cards from shrinking */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for each request card */
+    min-width: 200px; /* Set a minimum width for each request card */
+}
+
+.requestCard button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Increase button padding */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.requestCard button:hover {
+    background-color: #555;
+}
+
+

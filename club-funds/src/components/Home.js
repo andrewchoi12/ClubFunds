@@ -1,13 +1,19 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import css from "../styles/Home.module.css";
 import clubsFile from "../styles/clubs.json";
 
 export default function Home() {
-  // let clubs = clubsFile.clubs;
+  
+  let navigate = useNavigate();
+
   const initialClubs = clubsFile.clubs;
   const [clubs, setClubs] = useState(initialClubs);
   const [searchTerm, setSearchTerm] = useState("");
+
+  const goToClubDetails = (clubName) => {
+    navigate(`/clubinfo/${clubName}`);
+  };
 
   const handleSearch = (event) => {
     const term = event.target.value.toLowerCase();
@@ -21,29 +27,13 @@ export default function Home() {
     setClubs(filteredClubs);
   };
 
-  /*
-  let clubHTML = ``;
-  for (let i in clubs) {
-    clubHTML += `
-    <div className={css.Club}>
-          <h1>${clubs[i].name}</h1>
-          <a>Tags: ${clubs[i].tags}</a>
-          <h3>Who we are:</h3>
-          <p>
-            ${clubs[i].description}
-          </p>
-          <button>Connect</button>
-        </div>
-    `;
-  }
-  */
   const Club = ({ name, tags, description }) => (
     <div className={css.Club}>
       <h1>{name}</h1>
       <a>Tags: {tags}</a>
       <h3>Who we are:</h3>
       <p>{description}</p>
-      <button>Connect</button>
+      <button onClick={() => goToClubDetails(name)}>Connect</button>
     </div>
   );
 

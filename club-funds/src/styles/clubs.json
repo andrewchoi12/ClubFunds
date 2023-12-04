@@ -1,44 +1,85 @@
+
 {
     "clubs": [
         {
-            "name" : "BC Blockchain",
-            "tags" : "Cryptocurrency, Tech, Shea Center",
-            "description" : "BC Blockchain is a student-run, educational and professional organization seeking to educate other students on blockchain technology. We incorporate hands-on learning with industry expert speaking engagements, educational workshops, and ongoing projects to market cryptocurrencies within the student body."
+        "name": "BC Blockchain",
+        "tags": "Cryptocurrency, Tech, Shea Center",
+        "description": "BC Blockchain is a student-run, educational and professional organization seeking to educate other students on blockchain technology. We incorporate hands-on learning with industry expert speaking engagements, educational workshops, and ongoing projects to market cryptocurrencies within the student body.",
+        "requests": [
+            {"title": "New Computers", "amount": "$2000"},
+            {"title": "Workshop Materials", "amount": "$500"},
+            {"title": "Guest Speaker Fees", "amount": "$1500"}
+        ]
         },
         {
-            "name" : "Fulton Leadership Society",
-            "tags" : "Finance, CSOM, Service",
-            "description" : "The Fulton Leadership Society (FLS) in the Carroll School of Management aims to provide students with an opportunity to engage in formative experiences to develop their leadership potential, intellectual curiosity, and orientation to serve their community. FLS also adds value to the larger CSOM and Boston College communities through multiple outward facing initiatives."
+        "name": "Fulton Leadership Society",
+        "tags": "Finance, CSOM, Service",
+        "description": "The Fulton Leadership Society (FLS) in the Carroll School of Management aims to provide students with an opportunity to engage in formative experiences to develop their leadership potential, intellectual curiosity, and orientation to serve their community. FLS also adds value to the larger CSOM and Boston College communities through multiple outward facing initiatives.",
+        "requests": [
+            {"title": "Leadership Retreat", "amount": "$3000"},
+            {"title": "Mentorship Program", "amount": "$1200"},
+            {"title": "Community Service Project", "amount": "$800"}
+        ]
         },
         {
-            "name" : "4Boston",
-            "tags" : "Service, Community",
-            "description" : "4Boston is BC's largest weekly service organization. Volunteers serve four hours each week of the academic year with community partners in the social service, healthcare, or education sectors and engage in one hour of group reflection centered on community, social justice, and spirituality."
+        "name": "4Boston",
+        "tags": "Service, Community",
+        "description": "4Boston is BC's largest weekly service organization. Volunteers serve four hours each week of the academic year with community partners in the social service, healthcare, or education sectors and engage in one hour of group reflection centered on community, social justice, and spirituality.",
+        "requests": [
+            {"title": "Community Outreach", "amount": "$1000"},
+            {"title": "Educational Materials", "amount": "$700"},
+            {"title": "Transportation Costs", "amount": "$500"}
+        ]
         },
         {
-            "name" : "Best Buddies",
-            "tags" : "Community, Disability",
-            "description" : "Best Buddies of BC is part of an international organization that works to pair college students with employees that work on campus, or live around campus, with intellectual or developmental disabilities. Each college buddy is paired with a buddy to form a one-to-one friendship during their time as a student at BC."
+        "name": "Best Buddies",
+        "tags": "Community, Disability",
+        "description": "Best Buddies of BC is part of an international organization that works to pair college students with employees that work on campus, or live around campus, with intellectual or developmental disabilities. Each college buddy is paired with a buddy to form a one-to-one friendship during their time as a student at BC.",
+        "requests": [
+            {"title": "Event Sponsorship", "amount": "$1500"},
+            {"title": "Program Expansion", "amount": "$2000"},
+            {"title": "Volunteer Training", "amount": "$600"}
+        ]
         },
         {
-            "name" : "BC Army ROTC",
-            "tags" : "Military, Service, ROTC",
-            "description" : "Army ROTC focuses on developing leadership and management skills, with the goal of commissioning graduated college students as Second Lieutenants into the United States Army, Reserve, or National Guard. Students participate in ROTC part-time while attending college full-time. Most training and coursework takes place on the Boston College campus."
+        "name": "BC Army ROTC",
+        "tags": "Military, Service, ROTC",
+        "description":"Army ROTC focuses on developing leadership and management skills, with the goal of commissioning graduated college students as Second Lieutenants into the United States Army, Reserve, or National Guard. Students participate in ROTC part-time while attending college full-time. Most training and coursework takes place on the Boston College campus.",
+        "requests": [
+            {"title": "Training Equipment", "amount": "$2500"},
+            {"title": "Uniforms", "amount": "$1200"},
+            {"title": "Field Exercise Support", "amount": "$800"}
+        ]
         },
         {
-            "name" : "Jenks Leadership Program",
-            "tags" : "Leadership, Service, MCAS",
-            "description" : "The Jenks Leadership Program (JLP) is the signature student leadership program of the Winston Center for Leadership and Ethics and the Boston College community. JLP, named for Weston “Sandy” Jenks ’47, identifies and prepares undergraduate men and women to take up leadership roles in the service of others and the common good."
+        "name": "Jenks Leadership Program",
+        "tags": "Leadership, Service, MCAS",
+        "description":  "The Jenks Leadership Program (JLP) is the signature student leadership program of the Winston Center for Leadership and Ethics and the Boston College community. JLP, named for Weston “Sandy” Jenks ’47, identifies and prepares undergraduate men and women to take up leadership roles in the service of others and the common good.",
+        "requests": [
+            {"title": "Workshop Organization", "amount": "$1000"},
+            {"title": "Leadership Conference", "amount": "$1500"},
+            {"title": "Guest Lecturer Series", "amount": "$1200"}
+        ]
         },
         {
-            "name" : "Boston College Computer Science Society",
-            "tags" : "Computer Science, Technology",
-            "description" : "The Boston College Computer Science Society aims to foster an inclusive tech community for students of all majors to develop their coding skills, encourage each other to make their ideas come to life, and help students navigate through their career journey."
+        "name": "Boston College Computer Science Society",
+        "tags": "Computer Science, Technology",
+        "description":  "The Boston College Computer Science Society aims to foster an inclusive tech community for students of all majors to develop their coding skills, encourage each other to make their ideas come to life, and help students navigate through their career journey.",
+        "requests": [
+            {"title": "Hackathon Sponsorship", "amount": "$3000"},
+            {"title": "Tech Talk Series", "amount": "$1000"},
+            {"title": "Software Licenses", "amount": "$500"}
+        ]
         },
         {
-            "name" : "BC Dynamics",
-            "tags" : "Acapella, Singing",
-            "description" : "We are the Boston College Dynamics, a co-ed a cappella group from Chestnut Hill, Massachusetts. Founded in 1998, our group has developed into a premiere performing group on the Boston College campus. Our repertoire includes Top 40, R&B, and many other genres of popular music."
+        "name": "BC Dynamics",
+        "tags": "Acapella, Singing",
+        "description": "We are the Boston College Dynamics, a co-ed a cappella group from Chestnut Hill, Massachusetts. Founded in 1998, our group has developed into a premiere performing group on the Boston College campus. Our repertoire includes Top 40, R&B, and many other genres of popular music.",
+        "requests": [
+            {"title": "Concert Venue Rental", "amount": "$2000"},
+            {"title": "Sound Equipment", "amount": "$1500"},
+            {"title": "Costumes and Props", "amount": "$800"}
+        ]
         }
     ]
 }
