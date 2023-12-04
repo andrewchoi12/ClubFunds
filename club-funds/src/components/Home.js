@@ -9,21 +9,34 @@ export default function Home() {
 
   const initialClubs = clubsFile.clubs;
   const [clubs, setClubs] = useState(initialClubs);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [nameSearchTerm, setNameSearchTerm] = useState("");
+  const [tagSearchTerm, setTagSearchTerm] = useState("");
 
   const goToClubDetails = (clubName) => {
     navigate(`/clubinfo/${clubName}`);
   };
 
-  const handleSearch = (event) => {
+  const handleNameSearch = (event) => {
     const term = event.target.value.toLowerCase();
-    setSearchTerm(term);
-
-    // Filter clubs based on the search term
+    setNameSearchTerm(term);
+  
+    // Filter clubs based on the name search term
     const filteredClubs = initialClubs.filter((club) =>
       club.name.toLowerCase().includes(term)
     );
-
+  
+    setClubs(filteredClubs);
+  };
+  
+  const handleTagSearch = (event) => {
+    const term = event.target.value.toLowerCase();
+    setTagSearchTerm(term);
+  
+    // Filter clubs based on the tag search term
+    const filteredClubs = initialClubs.filter((club) =>
+      club.tags.toLowerCase().includes(term)
+    );
+  
     setClubs(filteredClubs);
   };
 
@@ -39,18 +52,27 @@ export default function Home() {
 
   return (
     <main className={css.Home}>
-      <header>Website Name</header>
+      <header>Club Funds</header>
       <div className={css.HeaderButtons}>
         <div className={css.SearchDiv}>
           <form>
-            <button type="button">Search</button>
             <input
               type="search"
-              id="query"
-              name="q"
-              placeholder="Find a club..."
-              value={searchTerm}
-              onChange={handleSearch}
+              id="nameQuery"
+              name="nameQuery"
+              placeholder="Find a club by name..."
+              value={nameSearchTerm}
+              onChange={handleNameSearch}
+            />
+          </form>
+          <form>
+            <input
+              type="search"
+              id="tagQuery"
+              name="tagQuery"
+              placeholder="Find a club by tag..."
+              value={tagSearchTerm}
+              onChange={handleTagSearch}
             />
           </form>
         </div>
