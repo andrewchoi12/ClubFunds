@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/andrewchoi12/ClubFunds/static/css/main.096b21fd.css",
+    "main.js": "/andrewchoi12/ClubFunds/static/js/main.bd84d1fd.js",
+    "static/js/787.c57d6a00.chunk.js": "/andrewchoi12/ClubFunds/static/js/787.c57d6a00.chunk.js",
+    "index.html": "/andrewchoi12/ClubFunds/index.html",
+    "main.096b21fd.css.map": "/andrewchoi12/ClubFunds/static/css/main.096b21fd.css.map",
+    "main.bd84d1fd.js.map": "/andrewchoi12/ClubFunds/static/js/main.bd84d1fd.js.map",
+    "787.c57d6a00.chunk.js.map": "/andrewchoi12/ClubFunds/static/js/787.c57d6a00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.096b21fd.css",
+    "static/js/main.bd84d1fd.js"
+  ]
+}
