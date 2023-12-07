@@ -10,11 +10,11 @@ export default function ClubDetails() {
   const [email, setSupportEmail] = useState("");
 
   useEffect(() => {
-    // Fetch the support email address from the specific club in the JSON file
+    // fetches club email address
     if (club && club.email) {
       setSupportEmail(club.email);
     }
-  }, [club]); // Run this effect when club changes
+  }, [club]);
 
   if (!club) {
     return <div>Club not found</div>;
